@@ -54,3 +54,4 @@ Input this data into the application and click "Submit". The application will re
 
 ## output
 
+![Screenshot (146)](https://github.com/Prasanna1818/students-data-visualization/assets/104350629/30f8c119-881f-46f2-89bd-3de504aa3c60)
