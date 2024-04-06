@@ -14,6 +14,17 @@ Before running this project, ensure you have the following installed:
 ## Getting Started
 1.Clone the repository:
 
+https://github.com/Prasanna1818/students-data-visualization.git
+
+2.Navigate to the project directory:
+
+cd students and schools
+
+3.Run the Flask application:
+
+python app.py
+
+
 
 
 ## Usage
@@ -40,3 +51,6 @@ Input this data into the application and click "Submit". The application will re
 &#8226;Flask
 
 &#8226;Plotly (for interactive data visualization)
+
+## output
+
