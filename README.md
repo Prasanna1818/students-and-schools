@@ -11,6 +11,10 @@ Before running this project, ensure you have the following installed:
 
 &#8226; Plotly ('pip install plotly')
 
+## Getting Started
+1.Clone the repository:
+
+
 
 ## Usage
 1.Input the number of students associated with each school and the names of the schools into the provided form fields.
