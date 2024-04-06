@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Data Visualization</title>
+</head>
+<body>
+    <h1>Enter School and Student Data</h1>
+    <form action="/visualize" method="post">
+        <label for="num_schools">Number of Schools:</label>
+        <input type="number" name="num_schools" id="num_schools">
+        <br>
+        {% for i in range(1, num_schools + 1) %}
+            <label for="school_name_{{ i }}">School {{ i }} Name:</label>
+            <input type="text" name="school_name_{{ i }}" id="school_name_{{ i }}">
+            <br>
+            <label for="num_students_{{ i }}">Number of Students in School {{ i }}:</label>
+            <input type="number" name="num_students_{{ i }}" id="num_students_{{ i }}">
+            <br>
+            {% for j in range(1, request.form.get('num_students_' + i|string, 0) + 1) %}
+
+
+                <label for="student_name_{{ i }}_{{ j }}">Student {{ j }} Name:</label>
+                <input type="text" name="student_name_{{ i }}_{{ j }}" id="student_name_{{ i }}_{{ j }}">
+                <br>
+                <label for="student_age_{{ i }}_{{ j }}">Student {{ j }} Age:</label>
+                <input type="number" name="student_age_{{ i }}_{{ j }}" id="student_age_{{ i }}_{{ j }}">
+                <br>
+            {% endfor %}
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
